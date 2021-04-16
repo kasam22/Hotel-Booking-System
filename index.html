@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Annapurna</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,400;0,600;1,300;1,400;1,600&family=Muli:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+    rel="stylesheet"/>
+  </head>
+
+  <body>
+    <div class="content">
+
+      <!-- Header -->
+      <header class="header">
+        <div class="image">
+          <img src="images/background.jpg" />
+        </div>
+        <div class="site-header">
+          <h1>Hotel Annapurna</h1>
+          <p>Your Home <br> away from Home</p>
+          <button>Discover Now</button>
+        </div>
+      </header>
+
+      <!--Navigation-->
+      <div class="main-nav">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+        <span>Close</span>
+      </div>
+
+      <section class="menu-bar">
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="#" class="menu-link" data-content="Home">Home</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link" data-content="About Us">About Us</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link" data-content="Rooms">Rooms</a>
+          </li>
+          <li class="menu-item">
+            <a href="contact.html" class="menu-link" data-content="Contact Us">Contact Us</a>
+          </li>
+        </ul>
+        <div class="social-media">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </section>
+
+    <!-- Booking-->
+    <div class = "book">
+      <form class = "booking-form">
+          <div class = "item">
+              <label for = "checkin-date">Check In Date: </label>
+              <input type = "date" id = "chekin-date">
+          </div>
+          <div class = "item">
+              <label for = "checkout-date">Check Out Date: </label>
+              <input type = "date" id = "chekout-date">
+          </div>
+          <div class = "item">
+              <label for = "adult">Adults: </label>
+              <input type = "number" min = "1" value = "1" id = "adult">
+          </div>
+          <div class = "item">
+              <label for = "children">Children: </label>
+              <input type = "number" min = "1" value = "1" id = "children">
+          </div>
+          <div class = "item">
+              <label for = "rooms">Rooms: </label>
+              <input type = "number" min = "1" value = "1" id = "rooms">
+          </div>
+          <div class = "item">
+              <input type = "submit" class = "btn" value = "Book Now">
+          </div>
+      </form>
+  </div>
+
+  <!-- Contact us-->
+  <section class="contact">
+    <div class="contact-wrapper">
+      <div class="contact-left"></div>
+      <div class="contact-right">
+        <h1 class="contact-heading">Contact Us</h1>
+        <form>
+          <div class="input-group">
+            <input type="text" class="field" />
+            <label class="input-label">Name</label>
+          </div>
+          <div class="input-group">
+            <input type="email" class="field" />
+            <label class="input-label">Email Address</label>
+          </div>
+          <div class="input-group">
+            <textarea class="field"></textarea>
+            <label class="message">Message</label>
+          </div>
+          <input type="submit" class="submit-btn" value="Submit" />
+        </form>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer Section-->
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="copyright">
+        Copyright &copy; 2020, Annapurna Hotel - All Rights Reserved
+      </p>
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+  <a href="#" class="scroll-btn">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
