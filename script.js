@@ -14,5 +14,11 @@ window.onload = () => {
       document.querySelector("html").style.scrollBehavior = "unset";
     }, 1000);
   });
-  
-  
+
+  let button = document.querySelector(".btn");
+
+button.addEventListener("click", () => 
+{
+    alert("Are you sure to book the room?")
+});
+
