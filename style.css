@@ -20,6 +20,12 @@
     display: block;
   }
 
+  .content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
   /* header*/
 
   .header {
@@ -85,7 +91,7 @@
     animation: moveBanner 1s 0.7s forwards;
   }
   
-  .site-header button {
+  .button {
     width: 25rem;
     height: 7rem;
     background-color: #c29525;
@@ -306,12 +312,21 @@
     border: none;
   }
 
+  .rooms:not(.btn){
+    margin: 4px 0 16px 0;
+    padding: 12px 15px;
+    border-radius: 5px;
+    font-size: 17px;
+    border: none;
+  }
+
   .item .btn{
     margin: 4px 0 16px 0;
     padding: 12px 15px;
     border-radius: 5px;
     font-size: 17px;
     border: none;
+    cursor: pointer;
     background-color: #c29525;
   }
   
@@ -359,6 +374,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
   }
   
   .contact-wrapper {
@@ -628,6 +644,112 @@
     box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
   }
 
+   /* About Us */
+   .about{
+    margin: 40px;
+    margin-bottom: 50px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 40px; 
+    border-radius: 5px;
+}
+
+.about-text{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    font-size: 18px;
+    color: #2B7A78;
+}
+
+.h2{
+  font-family: "Muli", serif;
+    font-size: 5rem;
+    font-weight: 300;
+    color: #4b4b4b;
+    margin-bottom: 6rem;
+}
+
+.reviews{
+  padding: 50px 0;
+  position: relative;
+}
+
+.review-video{
+  margin-bottom: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+.bg-video{
+  margin-top: 15px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.review-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review-bg{
+  background-color:  rgba(238, 238, 238, 0.85);
+  padding: 20px;
+  margin: 20px;
+  width: 70%;
+  transform: skewX(20deg);
+}
+
+.main-review{
+  transform: skewX(-20deg);
+  display: flex;
+}
+
+.review-image{
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 15px;
+}
+
+.review-text{
+  letter-spacing: 0.8px;
+}
+
+.review-heading{
+  font-size: 25px;
+  color: #3AAFA9;
+  margin-top: 9%;
+  margin-bottom: 10px;
+}
+
+.review-paragraph{
+  font-size: 15px;
+  color: #3AAFA9;
+}
+
+.review-paragraph::first-letter{
+  margin-left: 7px;
+}
+
+.review-link{
+  background-color: #3AAFA9;
+  width: 150px;
+  margin-bottom: 0%;  
+}
+
+.link-msg{
+  color: #2B7A78;   
+}
+
   /* Responsive Design */
   @media (max-width: 1500px) {
     .contact-wrapper {
@@ -725,6 +847,8 @@
       margin-top: 3rem;
     }
   }
+
+ 
   
   @media (max-width: 700px) {
     .site-header h1 {

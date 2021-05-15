@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="content">
+      <h1> Booking Form </h1>
+        <div class = "book">
+            <form class = "booking-form">
+                <div class = "item">
+                    <label for = "checkin-date">Check In Date: </label>
+                    <input type = "date" id = "chekin-date">
+                </div>
+                <div class = "item">
+                    <label for = "checkout-date">Check Out Date: </label>
+                    <input type = "date" id = "chekout-date">
+                </div>
+                <div class = "item">
+                    <label for = "adult">Adults: </label>
+                    <input type = "number" min = "1" value = "1" id = "adult">
+                </div>
+                <div class = "item">
+                    <label for = "children">Children: </label>
+                    <input type = "number" min = "1" value = "1" id = "children">
+                </div>
+                <div class = "item">
+                    <label for = "rooms">Rooms: </label>
+                    <select id="rooms">
+                      <option class="option" value="Queen">Queen</option>
+                      <option class="option" value="King">King</option>
+                      <option class="option" value="Studio">Studio</option>
+                    </select>
+                </div>
+                <div class = "item">
+                  <button type = "button" class="btn">
+                    Book Now 
+                  </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+     <!-- Footer Section-->
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="copyright">
+        Copyright &copy; 2020, Annapurna Hotel - All Rights Reserved
+      </p>
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+    
+</body>
+</html>

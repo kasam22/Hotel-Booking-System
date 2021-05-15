@@ -15,10 +15,10 @@ window.onload = () => {
     }, 1000);
   });
 
+  /* popup  message after clicking book */
   let button = document.querySelector(".btn");
 
 button.addEventListener("click", () => 
 {
     alert("Are you sure to book the room?")
 });
-
