@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&display=swap"/>
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    rel="stylesheet"
+  />
+</head>
+
+<body>
+    <div class="content">
+      <!--Navigation-->
+      <div class="main-nav">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+        <span>Close</span>
+      </div>
+
+      <section class="menu-bar">
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="index.html" class="menu-link" data-content="Home">Home</a>
+          </li>
+          <li class="menu-item">
+            <a href="about.html" class="menu-link" data-content="About Us">About Us</a>
+          </li>
+          <li class="menu-item">
+            <a href="room.html" class="menu-link" data-content="Rooms">Rooms</a>
+          </li>
+          <li class="menu-item">
+            <a href="review.html" class="menu-link" data-content="Review">Review</a>
+          </li>
+          <li class="menu-item">
+            <a href="contact.html" class="menu-link" data-content="Contact Us">Contact Us</a>
+          </li>
+        </ul>
+        <div class="social-media">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </section>
+
+      <!--Booking Form-->
+      <h1> Booking Form </h1>
+        <div class = "book">
+            <form class = "booking-form">
+                <div class = "item">
+                    <label for = "checkin-date">Check In Date: </label>
+                    <input type = "date" id = "chekin-date">
+                </div>
+                <div class = "item">
+                    <label for = "checkout-date">Check Out Date: </label>
+                    <input type = "date" id = "chekout-date">
+                </div>
+                <div class = "item">
+                    <label for = "adult">Adults: </label>
+                    <input type = "number" min = "1" value = "1" id = "adult">
+                </div>
+                <div class = "item">
+                    <label for = "children">Children: </label>
+                    <input type = "number" min = "1" value = "1" id = "children">
+                </div>
+                <div class = "item">
+                    <label for = "rooms">Rooms: </label>
+                    <select id="rooms">
+                      <option class="option" value="Queen">Queen</option>
+                      <option class="option" value="King">King</option>
+                      <option class="option" value="Studio">Studio</option>
+                    </select>
+                </div>
+                <div class = "item">
+                  <button type = "button" class="btn">
+                    Book Now 
+                  </button>
+                </div>
+            </form>
+        </div>
+
+     <!-- Footer Section-->
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="copyright">
+        Copyright &copy; 2020, Annapurna Hotel - All Rights Reserved
+      </p>
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+  </div>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>

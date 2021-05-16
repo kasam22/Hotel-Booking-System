@@ -14,5 +14,10 @@ window.onload = () => {
       document.querySelector("html").style.scrollBehavior = "unset";
     }, 1000);
   });
-  
-  
+
+  /* popup  message after clicking book */
+  let button = document.querySelector(".btn");
+  button.addEventListener("click", () => 
+  {
+    alert("Your room is booked.")
+  });

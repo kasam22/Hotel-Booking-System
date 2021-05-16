@@ -4,9 +4,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hotel Annapurna</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,400;0,600;1,300;1,400;1,600&family=Muli:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
-    rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&display=swap"/>
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    rel="stylesheet"
+  />
   </head>
 
   <body>
@@ -15,12 +17,16 @@
       <!-- Header -->
       <header class="header">
         <div class="image">
-          <img src="images/background.jpg" />
+          <img src="images/back.jpg" />
         </div>
         <div class="site-header">
           <h1>Hotel Annapurna</h1>
           <p>Your Home <br> away from Home</p>
-          <button>Discover Now</button>
+          <a href="room.html">
+            <button type = "button" class="button">
+              Discover Now <a href="room.html"></a>
+            </button>
+          </a>
         </div>
       </header>
 
@@ -35,13 +41,16 @@
       <section class="menu-bar">
         <ul class="menu">
           <li class="menu-item">
-            <a href="#" class="menu-link" data-content="Home">Home</a>
+            <a href="index.html" class="menu-link" data-content="Home">Home</a>
           </li>
           <li class="menu-item">
-            <a href="#" class="menu-link" data-content="About Us">About Us</a>
+            <a href="about.html" class="menu-link" data-content="About Us">About Us</a>
           </li>
           <li class="menu-item">
-            <a href="#" class="menu-link" data-content="Rooms">Rooms</a>
+            <a href="room.html" class="menu-link" data-content="Rooms">Rooms</a>
+          </li>
+          <li class="menu-item">
+            <a href="review.html" class="menu-link" data-content="Review">Review</a>
           </li>
           <li class="menu-item">
             <a href="contact.html" class="menu-link" data-content="Contact Us">Contact Us</a>
@@ -74,11 +83,17 @@
               <input type = "number" min = "1" value = "1" id = "children">
           </div>
           <div class = "item">
-              <label for = "rooms">Rooms: </label>
-              <input type = "number" min = "1" value = "1" id = "rooms">
+              <label for = "rooms">Room: </label>
+              <select class="rooms">
+                <option value="Queen">Queen</option>
+                <option value="King">King</option>
+                <option value="Studio">Studio</option>
+              </select>
           </div>
           <div class = "item">
-              <input type = "submit" class = "btn" value = "Book Now">
+            <button type = "button" class="btn">
+              Book Now 
+            </button>
           </div>
       </form>
   </div>
@@ -88,7 +103,7 @@
     <div class="contact-wrapper">
       <div class="contact-left"></div>
       <div class="contact-right">
-        <h1 class="contact-heading">Contact Us</h1>
+        <h1>Contact Us</h1>
         <form>
           <div class="input-group">
             <input type="text" class="field" />
@@ -112,7 +127,7 @@
   <footer class="footer">
     <div class="footer-content">
       <p class="copyright">
-        Copyright &copy; 2020, Annapurna Hotel - All Rights Reserved
+        Copyright &copy; 2020, Hotel Annapurna - All Rights Reserved
       </p>
       <div class="social">
         <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -124,8 +139,10 @@
   <a href="#" class="scroll-btn">
     <i class="fas fa-arrow-up"></i>
   </a>
+  
 
 </div>
+
 <script src="script.js"></script>
 </body>
 </html>

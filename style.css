@@ -11,17 +11,23 @@
   html {
     font-size: 62.5%;
   }
-  
-  .content {
-    display: none;
-  }
-  
-  .display .content {
-    display: block;
+
+  .content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
   }
 
-  /* hrader*/
+  h1{
+    font-size: 45px;
+    font-weight: 700;
+    color: #116466;
+    text-align: center;
+    text-shadow: 2px 2px 5px #d1e8e2;
+  }
 
+  /* header*/
   .header {
     width: 100%;
     height: 100vh;
@@ -61,44 +67,44 @@
   }
   
   .site-header h1 {
-    font-family: "Baloo Da 2", serif;
-    font-size: 8rem;
-    font-weight: 300;
-    color: #fff;
-    width: 50%;
     line-height: 9rem;
     letter-spacing: 0.2rem;
-    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
     opacity: 0;
     animation: moveBanner 1s 0.5s forwards;
+    color: #fff;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
   }
   
   .site-header p {
-    font-family: "Josefin Slab", serif;
-    font-size: 4rem;
+    font-size: 3rem;
     color: #fff;
     width: 70%;
     letter-spacing: 0.1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
+    margin-top: 3rem;
     text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
     opacity: 0;
     animation: moveBanner 1s 0.7s forwards;
   }
   
-  .site-header button {
+  .button {
     width: 25rem;
-    height: 7rem;
-    background-color: #c29525;
+    height: 5rem;
+    background-color: #116466;
     border: none;
     font-family: "Muli", serif;
     font-size: 2rem;
     text-transform: uppercase;
-    color: #fff;
+    color: #d1e8e2;
     text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
     box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
     cursor: pointer;
     opacity: 0;
     animation: moveBanner 1s 0.9s forwards;
+  }
+
+  .button a{
+    color: #d1e8e2;
   }
   
   @keyframes moveBanner {
@@ -133,12 +139,12 @@
   .line {
     width: 100%;
     height: 0.2rem;
-    background-color: #fff;
+    background-color: #d1e8e2;
     box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
   }
   
   .change .line {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #116466;
   }
   
   .change .line-1 {
@@ -159,13 +165,12 @@
     left: 5rem;
     width: 10rem;
     height: 4rem;
-    background-color: #e2b646;
+    background-color: #116466;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
-    font-family: "Baloo Da 2", serif;
-    font-size: 1.6rem;
+    color: #d1e8e2;
+    font-size: 2rem;
     letter-spacing: 0.1rem;
     opacity: 0;
     visibility: hidden;
@@ -181,7 +186,7 @@
     content: "";
     position: absolute;
     border-left: 1rem solid transparent;
-    border-right: 1rem solid #e2b646;
+    border-right: 1rem solid #116466;
     border-bottom: 1rem solid transparent;
     border-top: 1rem solid transparent;
     top: 50%;
@@ -195,7 +200,7 @@
     position: fixed;
     top: 0;
     right: -40rem;
-    background-color: #fff;
+    background-color: #d9b083;
     transition: right 0.5s;
     z-index: 100;
   }
@@ -209,16 +214,18 @@
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding-top: 7rem;
   }
   
   .menu-item {
     text-align: center;
+    padding-bottom: 1rem;
   }
   
   .menu-link {
     font-family: "Baloo Da 2", serif;
     font-size: 4rem;
-    color: #555;
+    color: #d1e8e2;
     position: relative;
   }
   
@@ -227,7 +234,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    color: #c29525;
+    color: #116466;
     width: 0;
     overflow: hidden;
     white-space: nowrap;
@@ -251,7 +258,7 @@
     margin: 3rem;
     width: 4.5rem;
     height: 4.5rem;
-    background-color: #777;
+    background-color: #2c3531;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -261,14 +268,14 @@
   }
   
   .social-media i:hover {
-    background-color: #c29525;
+    background-color: #116466;
   }
 
   /* Booking*/
   .book{
-    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("images/book-bg.jpg") center/cover no-repeat;
-    color: #fff;
+    background-color: #d1e8e2;
     padding: 40px 60px;
+    width: 100%;
   }
   
   .booking-form{
@@ -280,22 +287,20 @@
     flex-direction: column;
     justify-content: center;
   }
-  
+
   .booking-form input[type = "submit"]{
     margin: 18px 0 0 0;
     background: var(--dark);
     color: #fff;
     border: 1px solid #fff;
   }
-  
-  .booking-form label, .booking-form input{
-    width: 100%;
-  }
-  
+
+ 
   .booking-form label{
     font-size: 22px;
     word-spacing: 5px;
     padding-bottom: 8px;
+    color: #116466;
   }
   
   .booking-form input:not(.btn){
@@ -304,6 +309,18 @@
     border-radius: 5px;
     font-size: 17px;
     border: none;
+    background-color: #116466;
+    color: #d1e8e2;
+  }
+
+  .item select{
+    margin: 4px 0 16px 0;
+    padding: 12px 15px;
+    border-radius: 5px;
+    font-size: 17px;
+    border: none;
+    background-color: #116466;
+    color: #d1e8e2;
   }
 
   .item .btn{
@@ -312,28 +329,27 @@
     border-radius: 5px;
     font-size: 17px;
     border: none;
-    background-color: #c29525;
+    cursor: pointer;
+    color: #d1e8e2;
+    background-color: #116466;
   }
   
   .booking-form input:focus{
     outline: 0;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
   }
-  
-  /* Responsive Design */
+
   @media(min-width: 768px){
     .booking-form{
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 24px;
-    }
+    } 
   }
-  
   @media(min-width: 1170px){
     .booking-form{
         grid-template-columns: repeat(3, 1fr);
     }
   }
-  
   @media(min-width: 1370px){
     .booking-form{
         grid-template-columns: 2fr 2fr 1fr 1fr 1fr 2fr;
@@ -343,7 +359,6 @@
         display: grid;
     }
   }
-  
   @media(max-width: 500px){
     .book{
         padding-left: 20px;
@@ -351,18 +366,20 @@
     }
   }
 
+  
   /* Contact Us */
   .contact {
     width: 100%;
     height: 100vh;
-    background-color: #272727;
+    background-color: #116466;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
   }
   
   .contact-wrapper {
-    width: 60%;
+    width: 100%;
     height: 60rem;
     display: flex;
     box-shadow: 0 3rem 7rem rgba(0, 0, 0, 0.5);
@@ -370,7 +387,7 @@
   
   .contact-left {
     width: 35%;
-    background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)),
+    background: linear-gradient(rgba(15, 15, 15, 0.3), rgba(22, 22, 22, 0.9)),
       url(images/contact-bg.jpg) center no-repeat;
     background-size: cover;
   }
@@ -382,10 +399,7 @@
   }
   
   .contact-heading {
-    font-family: "Baloo Da 2", serif;
-    font-size: 6rem;
-    font-weight: 300;
-    color: #272727;
+    margin-top: 2rem;
     margin-bottom: 5rem;
     text-align: center;
   }
@@ -453,8 +467,8 @@
   .submit-btn {
     width: 45rem;
     height: 5rem;
-    background-color: #c29525;
-    color: #fff;
+    background-color: #116466;
+    color: #d1e8e2;
     border: none;
     margin-top: 2rem;
     font-family: "Muli", serif;
@@ -471,10 +485,12 @@
   .footer {
     width: 100%;
     height: 15rem;
-    background-color: #17181b;
+    background-color: #2c3531;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10rem;
+    padding-top: 3rem;
   }
   
   .footer-content {
@@ -486,16 +502,7 @@
   .copyright {
     font-family: "Baloo Da 2", serif;
     font-size: 1.6rem;
-    color: #a7a7a7;
-  }
-  
-  .social a {
-    margin: 0 2rem;
-  }
-  
-  .social i {
-    font-size: 2rem;
-    color: #a7a7a7;
+    color: #d1e8e2;
   }
   
   .scroll-btn {
@@ -504,112 +511,238 @@
     bottom: 5rem;
     width: 4.5rem;
     height: 4.5rem;
-    background-color: #e2b646;
+    background-color: #116466;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    color: #fff;
+    color: #d1e8e2;
     box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.2);
     border-radius: 0.3rem;
   }
   
-  @media (max-width: 1500px) {
-    .contact-wrapper {
-      width: 80%;
-      height: 65rem;
-    }
   
-    .footer-content {
-      width: 80%;
+  .social i {
+      font-size: 2rem;
+      color: #d1e8e2;
+      width: 4.5rem;
     }
+
+
+  /* Room */
+  .room {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
   }
   
-  @media (max-width: 1400px) {
-    .site-header h1 {
-      font-size: 6rem;
-      line-height: 7rem;
-    }
-  
-    .site-header p {
-      font-size: 3rem;
-    }
-  
-    .site-header button {
-      width: 20rem;
-      height: 5rem;
-      font-size: 1.6rem;
-    }
-  
-    .menu-link {
-      font-size: 3rem;
-    }
+  h1 {
+    margin-top: 3rem;
+    margin-bottom: 6rem;
   }
   
-  @media (max-width: 1300px) {
-  
-    .contact-wrapper {
-      width: 90%;
-      height: 55rem;
-    }
-  
-    .contact-heading {
-      margin-bottom: 2rem;
-    }
-  
-    .field {
-      margin: 2rem 0;
-    }
+  .cards-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-bottom: 5rem;
   }
   
-  @media (max-width: 1000px) {
-    .site-header h1 {
-      font-size: 5rem;
-      line-height: 6rem;
-    }
-  
-    .site-header p {
-      font-size: 2.5rem;
-    }
-  
-    .site-header button {
-      width: 18rem;
-      height: 4rem;
-      font-size: 1.5rem;
-    }
-  
-    .contact-left {
-      width: 0;
-    }
-  
-    .contact-right {
-      width: 100%;
-    }
-  
-    .field {
-      width: 55rem;
-    }
-  
-    .input-group textarea {
-      max-width: 55rem;
-    }
-  
-    .submit-btn {
-      width: 55rem;
-    }
-  
-    .footer-content {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      width: 50%;
-    }
-  
-    .copyright {
-      order: 1;
-      margin-top: 3rem;
-    }
+  .card {
+    width: 37rem;
+    height: 45rem;
+    perspective: 2400px;
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 0.5rem;
+    position: relative;
   }
+  
+  .card-img-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #262626;
+    border-radius: 0.5rem;
+  }
+  
+  .card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    border-radius: 0.5rem;
+    transition: opacity 0.3s;
+  }
+  
+  .card:hover .card-img-wrapper img {
+    opacity: 0.5;
+  }
+  
+  .card-info {
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    text-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+  }
+  
+  .card:hover .card-info {
+    bottom: 2rem;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .card-info h2 {
+    font-family: "Baloo Da 2", serif;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+    color: #eee;
+    margin-bottom: 1rem;
+  }
+  
+  .card-info h3 {
+    font-family: "Muli", serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #a52a2a;
+    margin-bottom: 1rem;
+  }
+  
+  .card-info p {
+    font-family: "Baloo da 2", serif;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-weight: 300;
+    color: #eee;
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+  
+  .card-info button {
+    width: 10rem;
+    height: 3rem;
+    background-color: #116466;
+    border: none;
+    font-family: "Baloo Da 2", serif;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    color: #eee;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
+  }
+
+   /* About Us */
+   .about{
+    margin: 40px;
+    margin-bottom: 50px;
+    height: 100%;
+    background-color: #116466;
+    padding: 40px; 
+    border-radius: 5px;
+}
+
+  .about p{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    font-size: 18px;
+    color: #d1e8e2;
+  }
+
+  h1{
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+  }
+
+  /*Customer Review*/
+
+.reviews{
+  padding: 50px 0;
+  position: relative;
+}
+
+.review-video{
+  margin-bottom: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+.bg-video{
+  margin-top: 15px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.review-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review-bg{
+  background-color:  rgba(238, 238, 238, 0.85);
+  padding: 20px;
+  margin: 20px;
+  width: 70%;
+  transform: skewX(20deg);
+}
+
+.main-review{
+  transform: skewX(-20deg);
+  display: flex;
+}
+
+.review-image{
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 15px;
+}
+
+.review-text{
+  letter-spacing: 0.8px;
+}
+
+.review-heading{
+  font-size: 25px;
+  color: #116466;
+  margin-top: 9%;
+  margin-bottom: 10px;
+}
+
+.review-paragraph{
+  font-size: 18px;
+  color: #116466;
+}
+
+.review-paragraph::first-letter{
+  margin-left: 10px;
+}
+
+.review-link{
+  background-color:  rgba(238, 238, 238, 0.85);
+  width: 200px;
+  font-size: large;
+  margin-bottom: 0%;
+  position:sticky;  
+}
+
+.link-msg{
+  color: #116466;   
+}
+
+  /* Responsive Design */
   
   @media (max-width: 700px) {
     .site-header h1 {
